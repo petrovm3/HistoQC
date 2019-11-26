@@ -5,5 +5,5 @@ RUN apt-get update && \
     apt-get install -y openslide-tools
 
 RUN cd /opt \
-    git clone https://github.com/choosehappy/HistoQC.git \
-    pip3 install -r /opt/HistoQC/requirements.txt
+    && git clone https://github.com/choosehappy/HistoQC.git \
+    && pip3 install -r /opt/HistoQC/requirements.txt
